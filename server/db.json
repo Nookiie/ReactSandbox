@@ -1,36 +1,52 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "username": "maman5912121",
-        "password": "maman98a",
-        "fname": "David",
-        "lname": "Peterborough",
-        "email": "maman@gmail.com"
-      },
-      {
-        "id": 2,
-        "username": "maman68",
-        "password": "maman68ada",
-        "fname": "Viktor",
-        "lname": "Gill",
-        "email": "something@so"
-      },
-      {
-        "id": 4,
-        "username": "sadasd",
-        "password": "asdasdsa",
-        "fname": "dsadasda",
-        "lname": "dsadsad",
-        "email": "asd@asdasd"
-      },
-      {
-        "id": 5,
-        "username": "12121",
-        "password": "12345678",
-        "fname": "asdas",
-        "lname": "sadasda",
-        "email": "asdasds@sadada"
-      }
-    ]
-  }
+  "users": [
+    {
+      "id": 2,
+      "username": "maman687",
+      "password": "maman68ada",
+      "isBlocked": false
+    },
+    {
+      "id": 4,
+      "username": "sadasd45",
+      "password": "asdasdsa12",
+      "isBlocked": false
+    },
+    {
+      "id": 5,
+      "username": "12121",
+      "password": "12345678",
+      "isBlocked": false
+    },
+    {
+      "id": 6,
+      "username": "asda121",
+      "password": "sadasd3121",
+      "isBlocked": false
+    },
+    {
+      "id": 7,
+      "username": "sadsd531321",
+      "password": "sadas543131",
+      "isBlocked": false
+    },
+    {
+      "id": 8,
+      "username": "asdasd",
+      "password": "saada21",
+      "isBlocked": false
+    },
+    {
+      "id": 9,
+      "username": "sadas",
+      "password": "asdasd3121",
+      "isBlocked": false
+    },
+    {
+      "id": 10,
+      "username": "11",
+      "password": "sad21ad",
+      "isBlocked": false
+    }
+  ]
+}
