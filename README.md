@@ -1,3 +1,15 @@
+# Before Starting!
+
+This project was made to work with json-server on port 2000!<br />
+
+Make sure to run the following commands:
+### `npm install --save`
+This installs all necessary dependancies
+### `json-server "server/db.json" --port 2000` 
+This starts the json server on port 2000 (<b>JSON Server must be absolutely on port 2000 or the application will break.</b>)
+
+# Create-React-App Default README
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
