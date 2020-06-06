@@ -1,7 +1,10 @@
-## Before Starting!
+# Before Starting!
 
 This project was made to work with json-server on port 2000!
-After starting the project with npm start, make sure to also run `json-server "server/db.json" --port 2000` to start the json server
+
+You can run `npm install --save` to automatically install all dependancies
+After installing the dependancies, make sure to start the json-server.
+You can do this by running the command `json-server "server/db.json" --port 2000` on a separate terminal.
 
 # Create-React-App Default README
 
