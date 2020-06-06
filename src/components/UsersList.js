@@ -32,6 +32,8 @@ const UsersList = () => {
     retrieveUsers();
     setCurrentUser(null);
     setCurrentIndex(-1);
+
+    setSearchTitle("");
   };
 
   const setActiveUser = (user, index) => {
@@ -39,18 +41,13 @@ const UsersList = () => {
     setCurrentIndex(index);
   };
 
-  const removeAllUsers = () => {
-    UserDataService.removeAll()
-      .then(response => {
-        console.log(response.data);
-        refreshList();
-      })
-      .catch(e => {
-        console.log(e);
-      });
-  };
-
   const findByUsername = () => {
+    if (searchUsername.trim() === "") {
+      refreshList();
+
+      return;
+    }
+
     UserDataService.findByUsername(searchUsername)
       .then(response => {
         setUsers(response.data);
@@ -74,16 +71,23 @@ const UsersList = () => {
           />
           <div className="input-group-append">
             <button
-              className="btn btn-outline-secondary"
+              className="btn btn-outline-primary"
               type="button"
               onClick={findByUsername}
             >
               Search
             </button>
+            <button
+              className="btn btn-outline-secondary"
+              type="button"
+              onClick={refreshList}
+            >
+              Clear
+            </button>
           </div>
           <Link
             to={"/add"}
-            className="btn btn-primary mr-2"
+            className="btn btn-primary ml-2 mr-6"
           >
             Add New
             </Link>
@@ -107,14 +111,6 @@ const UsersList = () => {
               </li>
             ))}
         </ul>
-
-        <button
-          className="m-3 btn btn-sm btn-danger"
-          onClick={removeAllUsers}
-        >
-          Remove All
-        </button>
-
       </div>
       <div className="col-md-6">
         {currentUser ? (
@@ -145,11 +141,17 @@ const UsersList = () => {
             >
               Edit
             </Link>
+            <button
+              onClick={refreshList}
+              className="badge badge-info mr-2"
+            >
+              Unselect
+            </button>
           </div>
         ) : (
             <div>
               <br />
-              <p>Please click on a User</p>
+              <p>Please select a <b>User</b> from the <b>User List</b></p>
             </div>
           )}
       </div>

@@ -85,7 +85,7 @@ const UserCreate = () => {
           </div>
 
           <button onClick={saveUser} className="btn btn-success">
-            Submit
+            Create
           </button>
         </div>
       )}

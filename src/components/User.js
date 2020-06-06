@@ -105,7 +105,7 @@ const User = props => {
                             <label>
                                 <strong>Status:</strong>
                             </label>
-                            {currentUser.isBlocked ? "Published" : "Pending"}
+                            {currentUser.isBlocked ? " Published" : " Pending"}
                         </div>
                     </form>
 
@@ -141,7 +141,7 @@ const User = props => {
                         to={"/users"}
                         className="badge badge-info m-2"
                     >
-                        Cancel
+                        Back to Users
             </Link>
 
                     <p>{message}</p>

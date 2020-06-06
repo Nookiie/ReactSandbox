@@ -20,10 +20,6 @@ const remove = id => {
   return http.delete(`/users/${id}`);
 };
 
-const removeAll = () => {
-  return http.delete(`/users`);
-};
-
 const findByUsername = title => {
   return http.get(`/users?username=${title}`);
 };
@@ -34,6 +30,5 @@ export default {
   create,
   update,
   remove,
-  removeAll,
   findByUsername
 };
