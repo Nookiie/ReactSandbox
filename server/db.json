@@ -1,0 +1,36 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "username": "maman5912121",
+        "password": "maman98a",
+        "fname": "David",
+        "lname": "Peterborough",
+        "email": "maman@gmail.com"
+      },
+      {
+        "id": 2,
+        "username": "maman68",
+        "password": "maman68ada",
+        "fname": "Viktor",
+        "lname": "Gill",
+        "email": "something@so"
+      },
+      {
+        "id": 4,
+        "username": "sadasd",
+        "password": "asdasdsa",
+        "fname": "dsadasda",
+        "lname": "dsadsad",
+        "email": "asd@asdasd"
+      },
+      {
+        "id": 5,
+        "username": "12121",
+        "password": "12345678",
+        "fname": "asdas",
+        "lname": "sadasda",
+        "email": "asdasds@sadada"
+      }
+    ]
+  }
