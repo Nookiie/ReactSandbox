@@ -1,7 +1,9 @@
-## Before Starting
+## Before Starting!
 
 This project was made to work with json-server on port 2000!
 After starting the project with npm start, make sure to also run `json-server "server/db.json" --port 2000` to start the json server
+
+# Create-React-App Default README
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
