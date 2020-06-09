@@ -151,7 +151,7 @@ const UsersList = () => {
         ) : (
             <div>
               <br />
-              <p>Please select a <b>User</b> from the <b>User List</b></p>
+              <p>Please select a <b>User</b> from the <b>Users List</b></p>
             </div>
           )}
       </div>

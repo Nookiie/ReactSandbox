@@ -32,7 +32,7 @@ const User = props => {
         setCurrentUser({ ...currentUser, [name]: value });
     };
 
-    const updatePublished = status => {
+    const updateBlocked = status => {
         var data = {
             id: currentUser.id,
             username: currentUser.username,
@@ -48,6 +48,8 @@ const User = props => {
             .catch(e => {
                 console.log(e);
             });
+
+            window.location.reload("false");
     };
 
     const updateUser = () => {
@@ -59,6 +61,7 @@ const User = props => {
             .catch(e => {
                 console.log(e);
             });
+
     };
 
     const deleteUser = () => {
@@ -105,23 +108,23 @@ const User = props => {
                             <label>
                                 <strong>Status:</strong>
                             </label>
-                            {currentUser.isBlocked ? " Published" : " Pending"}
+                            {currentUser.isBlocked ? " Blocked" : " Active"}
                         </div>
                     </form>
 
                     {currentUser.isBlocked ? (
                         <button
                             className="badge badge-primary mr-2"
-                            onClick={() => updatePublished(false)}
+                            onClick={() => updateBlocked(false)}
                         >
-                            Unpublish
+                            Unblock
                         </button>
                     ) : (
                             <button
                                 className="badge badge-primary mr-2"
-                                onClick={() => updatePublished(true)}
+                                onClick={() => updateBlocked(true)}
                             >
-                                Publish
+                                Block
                             </button>
                         )}
 
